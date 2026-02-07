@@ -1,20 +1,26 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# 🌸 Zen AI Haiku Generator
 
-This contains everything you need to run your app locally.
+Μια μινιμαλιστική εφαρμογή που μετατρέπει απλές λέξεις σε παραδοσιακά ποιήματα Haiku και δημιουργεί αντίστοιχες εικόνες Zen αισθητικής χρησιμοποιώντας το **Google Gemini API**.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1e9_Ld7wz7xYVodycuno5LMQ5Uvt6NBnC
+## 🚀 Λειτουργίες
+- **AI Ποίηση**: Δημιουργία Haiku (5-7-5 συλλαβές) στα Ελληνικά με αυτόματη ιαπωνική μετάφραση.
+- **AI Εικόνα**: Παραγωγή εικόνας σε στυλ Sumi-e (ιαπωνική μελάνη) που ταιριάζει με το ποίημα.
+- **Ιστορικό**: Αποθήκευση των αγαπημένων σας δημιουργιών τοπικά στον browser.
+- **Minimal Design**: Καθαρό περιβάλλον εργασίας με έμφαση στην ηρεμία και την τυπογραφία.
 
-## Run Locally
+## 🛠 Τεχνολογίες
+- **React 19** (μέσω ESM)
+- **Tailwind CSS** για το styling
+- **Google Gemini 3 Flash** για το κείμενο
+- **Google Gemini 2.5 Flash Image** για την εικόνα
+- **Lucide Icons** για τα εικονίδια
 
-**Prerequisites:**  Node.js
+## 📦 Πώς να το τρέξετε
+Επειδή η εφαρμογή χρησιμοποιεί Native ES Modules, δεν χρειάζεται διαδικασία build.
+1. Κατεβάστε τα αρχεία.
+2. Ανοίξτε το `index.html` σε έναν τοπικό server (π.χ. Live Server στο VS Code).
+3. Συνδέστε το δικό σας **Gemini API Key** μέσω του διαλόγου που θα εμφανιστεί.
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ⚠️ Ασφάλεια
+Το API Key δεν αποθηκεύεται στον κώδικα. Η εφαρμογή χρησιμοποιεί το `process.env.API_KEY` ή το επίσημο Key Selection dialog του Google AI Studio.
